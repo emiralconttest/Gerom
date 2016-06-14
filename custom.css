@@ -1,0 +1,193 @@
+/************************* Stilizari Globale **************************/
+*{ box-sizing: border-box; }
+.home .the_content { display: none; }
+
+
+/************************** Home **************************/
+
+/* Bara Meniu */
+#menu-main-menu li a { font-size: 15px !important; }
+.top_bar_right_wrapper:before {
+	display: inline-block;
+	background-color: #2f7cbc;
+	padding: 10px 20px;
+	content: 'Tel: 021 346 70 76';
+	margin-right: 10px;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+	border-bottom: 1px solid #2f7cbc;
+}
+
+/* Slide */
+.slide-light {
+	line-height: 31px;
+	font-weight: 300;
+	font-size: 24px;
+	font-family: 'Open Sans';
+	letter-spacing: 0px;
+}
+.top_bar_right { padding-top: 5px !important; }
+.is-sticky .top_bar_right { padding-top: 0 !important; top: -10px !important; }
+.is-sticky .top_bar_right a { border-radius: 0 !important; }
+.top_bar_right_wrapper a { top: 18px !important; }
+.top_bar_right_wrapper a span { background-color: #2BB23E !important; }
+.top_bar_right_wrapper a span:hover { background-color: #2f7cbc !important; }
+.top_bar_right_wrapper a { border: none !important; }
+#Top_bar #logo { height: auto !important; }
+
+/****** Panouri *******/
+.panouri-wrapper { 
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+.panouri-wrapper h2 { font-size: 1.8em; }
+.panouri-stanga, .panouri-dreapta {
+	display: table-cell;
+	width: 50%;
+}
+.panouri-wrapper .separator {
+	width: 40px;
+	height: 5px;
+	margin-left: 0;
+	margin-bottom: 10px;
+	margin-top: 4px;
+	background-color: #fff;
+	-webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.panouri-wrapper ul {
+	margin: 0;
+	padding: 0;
+}
+.panouri-wrapper ul li { 
+	list-style-type: none; 
+	color: #fff; 
+	font-size: .9em;
+	margin-bottom: 0;
+}
+.panouri-wrapper ul li:before { content: "-"; margin-right: 5px;}
+.panouri-wrapper h2 {
+	display: block;
+	margin: 5px;
+	padding: 10px 20px;
+	background-color: #aeaeae;
+	color: #fff;
+}
+.panouri-wrapper h3 {
+	display: inline-block;
+	margin: 0 0 2px 0;
+	font-size: 1.6em;
+	color: #fff;
+}
+.titlu-panou { display: table; }
+
+/* Panouri Stanga */
+.panouri-stanga .rand { width: 100%; display: block;}
+.panouri-stanga .rand .panou {
+	width: calc(50% - 10px);
+	height: 220px;
+	background-color: #005daa;
+	display: block;
+	float: left;
+	margin: 5px;
+	padding: 25px;
+}
+.unu .panou-b { background-color: #2f7cbc !important; }
+.doi .panou-a { background-color: #2f7cbc !important; }
+.trei .panou-b { background-color: #2f7cbc !important; }
+
+
+.panouri-stanga .panou:hover .separator {
+	width: 100%;
+	-webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+/* Panouri dreapta */
+.panouri-dreapta .rand {
+	width: calc(100% - 10px);
+	height: auto;
+	margin: 10px 5px 5px 5px;
+	display: block;
+	background-color: #005daa;
+}
+.panouri-dreapta .rand .col {
+	width: 49%;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+.panouri-dreapta ul {
+	margin-bottom: 18px;
+}
+.panouri-dreapta ul li:hover:before {
+	content: "+";
+}
+.panouri-dreapta ul li a { 
+	color: #fff; 
+	-webkit-transition-duration: .3s; 
+    transition-duration: .3s;
+}
+.panouri-dreapta ul li a:hover { 
+	color: #fff; 
+	text-decoration: none;
+	margin-left: 5px;
+	-webkit-transition-duration: .3s; 
+    transition-duration: .3s;
+}
+.imagine {
+	width: calc(100% - 10px);
+	height: 220px;
+	margin: 10px 5px 5px 5px;
+	background: url(http://www.emiralmedia.com/site/gerom/wp-content/uploads/2015/09/company.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+/* Servicii */
+.servicii-home .items_group { padding: 10px; }
+.servicii-icon {
+	width: 100%;
+	height: 160px;
+	line-height: 160px;
+	margin-bottom: 20px;
+	background-color: #2f7cbc;
+}
+.servicii-icon-wrapper img { vertical-align: middle; }
+.servicii-icon-wrapper p { color: #A2A2A2; }
+
+/* Parteneri */
+.parteneri-wrapper .column_clients, .parteneri-wrapper .parteneri-secundari { margin-bottom: 0; }
+ul.clients .client_wrapper { background: rgba(0, 0, 0, 0); }
+ul.clients .client_wrapper:hover { background: rgba(0, 0, 0, 0); }
+ul.clients li { background-color: #f0f0f0;}
+ul.clients li:nth-child(2n){ background-color: #eaeaea;}
+.parteneri-secundari .bx-wrapper { 
+	max-width: calc(100% - 10px) !important; 
+	margin-bottom: 0;
+}
+
+
+/************************** Pre Footer **************************/
+.pre-footer { background-color: #3d3d3d !important; }
+.pre-footer a { color: #9E9E9E !important; text-decoration: underline; }
+.pre-footer a:hover { color: #fff !important; }
+.pre-footer h4 { 
+	display: table;
+	padding: 7px 12px;
+	color: #fff; 
+	background-color: #2f7cbc !important;
+	margin-bottom: 30px;
+}
+.pre-footer p span { color: #fff; }
+.pre-footer p.big { color: #9E9E9E; }
+.pre-footer p strong { color: #fff; }
+.pre-footer .certificari-preview { width: 80% ; }
+
+/************************** Footer **************************/
+.copyright { text-align: left !important; width: 70% !important; }
+#Footer .footer_copy { background-color: #3d3d3d !important; }
+
