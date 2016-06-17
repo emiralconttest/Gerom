@@ -1,0 +1,449 @@
+/*-----------------------/ layout /-----------------------*/
+*{ box-sizing: border-box; }
+/* culoare principala: #2f7cbc */
+
+.ascunde { display: none !important; }
+
+/* Meniu */
+.menu-line-below #Top_bar .menu > li > a:after { display: none !important; }
+#Top_bar #logo { padding: 0 !important; }
+#Top_bar .logo { margin: 12px 30px 0 20px !important; }
+#Top_bar.is-sticky .logo { margin: 0 30px 0 20px !important; }
+
+#Top_bar { border-bottom: 1px solid #e8e8e8; }
+#Top_bar ul.menu li:last-child span { color: #2ac176; font-weight: 600; }
+#menu > ul > li > a {
+	font-weight: 600 !important;
+    font-size: .9em !important;
+}
+
+/* Header Pagina */
+.header-pagina {
+	text-align: center;
+	padding: 60px 0;
+}
+.header-pagina h1 {
+	color: #fff;
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+.header-pagina p {
+	color: rgba(225,225,225,.9);
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+/* Text */
+body p { letter-spacing: 0 !important; }
+h1, h2, h3, h4, h5, h6 { letter-spacing: 0 !important; }
+ul { margin-left: 0 !important; }
+ul li { list-style-type: none !important; }
+.align-center { text-align: center; }
+
+ul.lista { margin-left: 20px !important; }
+ul.lista li { list-style-type: disc !important; }
+
+/* Content */
+#Wrapper, #Content { background-color: #fff !important; }
+#Content { padding-top: 0 !important; }
+
+/* Subheader */
+#Subheader {
+    background-color: #2f7cbc !important;
+    padding: 17px 0 !important;
+}
+#Subheader h1 {
+	color: #fff !important;
+	font-size: 18px !important;
+}
+#Subheader ul.breadcrumbs li,
+#Subheader ul.breadcrumbs li a {
+	color: #adc2d4 !important;
+	font-size: 14px !important;
+}
+
+/* Lista */
+ul.gerom {
+	padding-left: 10px;
+	border: 1px solid #d8d8d8;
+	background-color: #fbfbfb;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.09);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.09);
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.09);
+
+}
+ul.gerom li:before {
+	content: url(http://emiralmedia.com/site/geromv2/wp-content/uploads/2016/06/gerom-lista.png);
+	margin-right: 5px;
+}
+
+/* Diverse */
+.fixed { position: fixed; }
+
+/*-----------------------/ home /-----------------------*/
+
+/*.wpb_revslider_element.wpb_content_element { margin-bottom: 0 !important; }*/
+
+/* Panouri */
+.panouri-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+.panouri-wrapper h2 {
+	font-size: 1.4em;
+	font-weight: 400;
+}
+.panouri-stanga, .panouri-dreapta {
+	display: table-cell;
+	width: 50%;
+}
+.panouri-wrapper .separator {
+	width: 40px;
+	height: 5px;
+	margin-left: 0;
+	margin-bottom: 10px;
+	margin-top: 4px;
+	background-color: #fff;
+	-webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.panouri-wrapper ul {
+	margin: 0;
+	padding: 0;
+}
+.panouri-wrapper ul li {
+	list-style-type: none;
+	color: #fff;
+	font-size: .9em !important;
+	margin-bottom: 0 !important;
+}
+.panouri-wrapper ul li:before { content: "-"; margin-right: 5px;}
+.panouri-wrapper h2 {
+	display: block;
+	margin: 5px;
+	padding: 10px 20px;
+	background-color: #aeaeae;
+	color: #fff;
+}
+.panouri-wrapper h3 {
+	display: inline-block;
+	margin: 0 0 2px 0;
+	font-size: 1.3em !important;
+	line-height: 1.2em !important;
+	color: #fff;
+}
+.titlu-panou { display: table; }
+.titlu-panou .separator { margin-bottom: 10px !important; }
+
+/* Panouri Stanga */
+.panouri-stanga .rand { width: 100%; display: block;}
+.panouri-stanga .rand .panou {
+	width: calc(50% - 10px);
+	height: 220px;
+	background-color: #005daa;
+	display: block;
+	float: left;
+	margin: 5px;
+	padding: 25px;
+}
+.unu .panou-b { background-color: #2f7cbc !important; }
+.doi .panou-a { background-color: #2f7cbc !important; }
+.trei .panou-b { background-color: #2f7cbc !important; }
+
+
+.panouri-stanga .panou:hover .separator {
+	width: 100%;
+	-webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+/* Panouri dreapta */
+.panouri-dreapta .rand {
+	width: calc(100% - 10px);
+	height: auto;
+	margin: 10px 5px 5px 5px;
+	display: block;
+	background-color: #005daa;
+}
+.panouri-dreapta .rand .col {
+	width: 49%;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+.panouri-dreapta ul {
+	margin-bottom: 18px;
+}
+.panouri-dreapta ul li:hover:before {
+	content: "+";
+}
+.panouri-dreapta ul li a {
+	color: #fff;
+	-webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.panouri-dreapta ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 5px;
+	-webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.imagine {
+	width: calc(100% - 10px);
+	height: 220px;
+	margin: 10px 5px 5px 5px;
+	background: url(http://www.emiralmedia.com/site/gerom/wp-content/uploads/2015/09/company.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+/* Servicii */
+.servicii-home .items_group { padding: 10px; }
+.servicii-icon {
+	width: 100%;
+	height: 160px;
+	line-height: 160px;
+	margin-bottom: 20px;
+	background-color: #2f7cbc;
+}
+.servicii-icon-wrapper img { vertical-align: middle; }
+.servicii-icon-wrapper p { color: #A2A2A2; }
+
+/* Solutii */
+.solutii-wrap h2 {
+	font-size: 2em !important;
+	color: #444 !important;
+	font-weight: 400;
+}
+ul.lista-servicii {
+	margin-left: 0 !important;
+	list-style-type: none;
+}
+ul.lista-servicii li {
+	width: 19.5%;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	vertical-align: top;
+}
+ul.lista-servicii li .icon {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #2f7cbc;
+	overflow: hidden;
+}
+ul.lista-servicii li .icon a.vezi-pagina {
+	position: absolute;
+	right: 10px;
+	bottom: -40px;
+	background: #005daa;
+	padding: 7px 10px;
+	color: #fff !important;
+	-webkit-transition: 1s ease-in-out;
+  	transition: 1s ease-in-out;
+}
+ul.lista-servicii li:hover .icon a.vezi-pagina {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	-webkit-transition: .30s ease-in-out;
+  	transition: .30s ease-in-out;
+}
+ul.lista-servicii li p {
+	color: #777;
+	font-size: .9em !important;
+	margin-bottom: 8px !important;
+}
+ul.lista-servicii li strong {
+	display: block;
+	font-size: 1.4em !important;
+	font-weight: 400 !important;
+	color: #000 !important;
+	min-height: 42px;
+}
+
+/* Parteneri */
+.parteneri-principali .wpb_single_image, .parteneri-secundari .wpb_single_image { text-align: center !important; }
+.parteneri-principali .ult-item-wrap {
+	padding: 10px;
+	background-color: #f5f5f5;
+}
+
+/*-----------------------/ footer /-----------------------*/
+
+#Footer { background: #3d3d3d !important; padding-top: 10px !important; }
+#Footer .titlu-footer {
+	color: #fff;
+    font-size: 1.2em;
+    background-color: #2f7cbc;
+    padding: 10px 15px;
+    display: table;
+    margin-bottom: 20px;
+}
+#Footer p {
+	margin-bottom: 5px !important;
+	color: #9E9E9E;
+	font-size: .9em;
+}
+#Footer strong { color: #fff; font-weight: 400; }
+#Footer a { color: #9E9E9E !important; border-bottom: 1px solid #868686; }
+#Footer a:hover { background-color: #616161; color: #fff !important; text-decoration: none; }
+.footer_copy .copyright {
+	font-size: .9em !important;
+}
+
+
+/*-----------------------/ servicii /-----------------------*/
+
+.servicii-intro {
+	padding: 30px;
+	background-color: #2f7cbc;
+	color: #fff;
+	margin-bottom: 15px !important;
+	text-align: center;
+	background-image: url(../../../wp-content/uploads/2016/06/servicii-intro-bg.jpg);
+	background-size: cover;
+}
+.servicii-intro h2 {
+	display: table;
+	margin: 0 auto 30px;
+	padding: 10px 15px;
+	font-size: 1.1em !important;
+	line-height: 1.2em;
+	color: #fff;
+	font-weight: 600;
+	background-color: #2b6da5;
+}
+.servicii-intro ul li { color: #fff; display: inline-block; margin-right: 15px; }
+.servicii-intro ul { margin-left: 0 !important; }
+.servicii-intro ul li:before {
+	display: table;
+	margin: 0 auto 5px;
+	font-size: 1.2em;
+	font-weight: 800;
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #2f7cbc;
+
+}
+.servicii-intro ul li:first-child:before { content: "01"; }
+.servicii-intro ul li:nth-child(2):before { content: "02"; }
+.servicii-intro ul li:nth-child(3):before { content: "03"; }
+.servicii-intro ul li:last-child:before { content: "04"; }
+
+.servicii-box .vc_col-sm-8 .vc_column-inner .wpb_wrapper .vc_row .vc_column-inner > .wpb_wrapper {
+	border: 1px solid #2f7cbc;
+    margin-bottom: 20px;
+}
+.servicii-box .vc_col-sm-8 .vc_single_image-wrapper { margin-bottom: 0 !important; }
+.servicii-box .vc_col-sm-8 .wpb_wrapper > div { margin-bottom: 10px !important; }
+.servicii-box .vc_col-sm-8 .text { padding: 0 15px; }
+
+/* Servicii Box */
+.servicii-box .titlu {
+	color: #000;
+	font-weight: 600;
+	font-size: 1.3em;
+}
+.servicii-box p {
+	color: #000;
+}
+.servicii-box .vc_col-sm-8 ul li,
+.servicii-box .vc_col-sm-8 p {
+	font-size: .9em;
+	color: #444;
+	margin-bottom: 5px !important;
+}
+.servicii-box .vc_col-sm-4 { position: relative; }
+
+/* Date de contact */
+.servicii-box .date-contact {
+    padding: 24px 20px 25px 37px;
+    margin-top: -35px;
+    margin-left: -15px;
+    width: 31%;
+    border: 1px solid #eaeaea;
+    color: #666;
+    font-size: .9em;
+    background-image: url(http://emiralmedia.com/site/geromv2/wp-content/uploads/2016/06/date-contact-background.jpg);
+    background-size: cover;
+}
+.servicii-box .date-contact .titlu {
+	display: table;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ececec;
+}
+.servicii-box .date-contact strong {
+	font-weight: 600;
+}
+
+.date-contact.fixed:before {
+    content: url(http://emiralmedia.com/site/geromv2/wp-content/uploads/2016/06/telefon-icon-rosu.png);
+    position: absolute;
+    left: 2px;
+    top: -15px;
+}
+
+/*-----------------------/ gerom international /-----------------------*/
+
+.wpb_tabs_nav.ui-tabs-nav { text-align: center !important; margin-bottom: 20px !important; }
+.wpb_tab.ui-tabs-panel { text-align: center; }
+.wpb_tab.ui-tabs-panel ul { margin-left: 0 !important; }
+.wpb_tab.ui-tabs-panel ul li { display: inline-block; }
+.wpb_content_element .wpb_accordion_wrapper .wpb_accordion_header, .wpb_content_element .wpb_tabs_nav li.ui-tabs-active, .wpb_content_element .wpb_tabs_nav li:hover, .wpb_content_element.wpb_tabs .wpb_tour_tabs_wrapper .wpb_tab { background-color: rgba(225,225,225,0) !important; }
+
+/*-----------------------/ solutii /-----------------------*/
+.pag_solutii h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.pag_solutii .wpb_wrapper > div { margin-bottom: 15px !important; }
+.pag_solutii .wpb_single_image .vc_single_image-wrapper { margin-bottom: 15px !important; }
+.bg-colorat h2,
+.bg-colorat p,
+.bg-colorat { color: #fff !important; }
+.pag_solutii .vc_col-sm-8 {}
+
+
+/**** Sisteme de afisare AV ****/
+.page-id-200 .bg-colorat .vc_col-sm-7 { padding-top: 50px; }
+.soft-gestionare .text { padding-top: 25px; }
+.pag_solutii.solutii-contact form.wpcf7-form { width: 100% !important; }
+.pag_solutii.solutii-contact input.wpcf7-form-control.wpcf7-submit { background-color: #444 !important; border: none !important; }
+.pag_solutii .vc_separator.wpb_content_element { margin-bottom: 40px !important; }
+.pag_solutii .wpb_single_image.wpb_content_element { margin-bottom: 0 !important; }
+
+/*-----------------------/ contact /-----------------------*/
+
+.contact-wrap .wpcf7 form { width: 100%; }
+.contact-wrap h2 {
+	font-size: 25px !important;
+	font-weight: 400 !important;
+}
+.contact-wrap .date strong { font-weight: 600; }
+.contact-wrap .date p { margin-bottom: 8px !important; font-size: .9em !important; }
+.contact-wrap .wpcf7 textarea { height: 130px !important; }
+.wpcf7 input,
+.wpcf7 textarea {
+	background-color: #f7f7f7 !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #444 !important;
+    border-bottom: 2px solid #ececec !important;
+}
+.wpcf7 input.wpcf7-submit {
+	background-color: #2f7cbc !important;
+	color: #fff !important;
+}
